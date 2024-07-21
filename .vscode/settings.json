@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  }
+}

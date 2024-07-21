@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title "Toutes les recettes" %}
+{# si c'est que du texte on peut faire ça #}
+
+{% block body %}
+	<p>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, saepe.
+    </p>
+
+	<ul>
+    {%  for recipe in recipes %}
+		<li>
+            <a href="{{ path('recipe.show', { slug: recipe.slug, id: recipe.id}) }}">{{ recipe.title }}</a>
+        </li>
+    {%  endfor %}
+	</ul>
+{% endblock %}
